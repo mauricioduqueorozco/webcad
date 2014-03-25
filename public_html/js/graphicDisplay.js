@@ -154,12 +154,14 @@ GraphicDisplay.prototype.execute = function() {
 
 GraphicDisplay.prototype.clearGrid = function(e) {
 	this.context.restore();
-	this.context.fillStyle = "#202020";
+	//this.context.fillStyle = "#202020";
+        this.context.fillStyle = "#3C65AB";
 	this.context.fillRect(0, 0, this.displayWidth, this.displayHeight);
 	this.context.save();
 	
 	this.context.translate(this.displayWidth/2, this.displayHeight/2);
-	this.context.strokeStyle = "#666";
+	//this.context.strokeStyle = "#666";
+        this.context.strokeStyle = "white";
 	this.context.lineWidth = 0.2;
 };
 
